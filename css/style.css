@@ -1,0 +1,181 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before, 
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 1200px;
+  font-family: "font", sans-serif;
+}
+
+/* glob */
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.sec-title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.sec-descr {
+  margin: 0;
+  margin-bottom: 130px;
+}
+
+.section-offset img{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+/* header */
+
+.header {
+  margin: 30px 0;
+}
+
+.cabinet {
+  margin-left: auto;
+}
+
+.phone-number {
+  margin-left: 40px;
+}
+
+.header__top {
+  align-items: center;
+}
+
+/* nav */
+
+.navigation {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item {
+  margin-right: 45px;
+}
+
+.btn {
+  margin-right: 45px;
+  padding: 13px 20px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons :not(:last-child){
+  margin-right: 0;
+}
+
+
+.back-call {
+  width: 177px;
+}
+
+/* section special-offers */
+
+.picture {
+  margin-top: 40px;
+  width: 573px;
+}
+
+.special-offers {
+  text-align: center;
+  margin-left: -880px;
+}
+
+.container-special-offers {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* section about us */ 
+
+.sec-text {
+  margin-top: 70px;
+  margin-bottom: 130px;
+}
+
+/* Services*/
+
+.services {
+  flex-wrap: wrap;
+}
+
+.service-item {
+  width: 573px;
+  margin-right: 0;
+}
+
+/* Advantage */
+
+.advantage-sec {
+  margin-top: 70px;
+}
+
+.advantage {
+  flex-wrap: wrap;
+}
+
+.advantage-item {
+  width: 276px;
+  padding-right: 22px;
+}
+
+.advantage :not(:last-child){
+  margin-right: 0;
+}
+
+/* accommodation */
+
+.accommodation {
+  margin-top: 70px;
+}
+
+.accommodation-list {
+  flex-wrap: wrap;
+}
