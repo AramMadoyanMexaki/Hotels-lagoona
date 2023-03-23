@@ -111,7 +111,6 @@ body {
   margin-right: 0;
 }
 
-
 .back-call {
   width: 177px;
 }
@@ -123,14 +122,9 @@ body {
   width: 573px;
 }
 
-.special-offers {
-  text-align: center;
-  margin-left: -880px;
-}
-
 .container-special-offers {
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: space-between;
 }
 
 /* section about us */ 
