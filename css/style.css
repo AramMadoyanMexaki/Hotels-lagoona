@@ -3,7 +3,7 @@ html {
 }
 
 *,
-*::before, 
+*::before,
 *::after {
   box-sizing: inherit;
 }
@@ -17,9 +17,36 @@ img {
   max-width: 100%;
 }
 
+/* fonts */
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Regular") url("../fonts/MullerRegular.woff") format("woff")
+    url("../fonts/MullerRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Light") url("../fonts/MullerLight.woff") format("woff")
+    url("../fonts/MullerLight.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Medium") url("../fonts/MullerMedium.woff") format("woff")
+    url("../fonts/MullerMedium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+/* body */
+
 body {
   min-width: 1200px;
-  font-family: "font", sans-serif;
+  font-family: "Muller", sans-serif;
+  background-color: #e5e5e5;
 }
 
 /* glob */
@@ -56,7 +83,7 @@ body {
   margin-bottom: 130px;
 }
 
-.section-offset img{
+.section-offset img {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -77,10 +104,13 @@ body {
 
 .cabinet {
   margin-left: auto;
+  color: #cc9933;
+  font-size: 16px;
 }
 
 .phone-number {
   margin-left: 40px;
+  color: #666666;
 }
 
 .header__top {
@@ -92,6 +122,11 @@ body {
 .navigation {
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 27px 45px;
+  margin-top: 30px;
 }
 
 .list-item {
@@ -101,25 +136,35 @@ body {
 .btn {
   margin-right: 45px;
   padding: 13px 20px;
+  border: 1px solid #cc9933;
+  color: #cc9933;
+  font-size: 16px;
+  border-radius: 15px;
 }
 
 .buttons {
   display: flex;
 }
 
-.buttons :not(:last-child){
-  margin-right: 0;
-}
-
 .back-call {
-  width: 177px;
+  margin-right: 0;
 }
 
 /* section special-offers */
 
 .picture {
-  margin-top: 40px;
+  margin-top: 24px;
   width: 573px;
+  height: 258px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 40px 108px 138px 45px;
+}
+
+.picture a {
+  color: #f0bf5f;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .container-special-offers {
@@ -127,22 +172,143 @@ body {
   justify-content: space-between;
 }
 
-/* section about us */ 
+.special-offers {
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.maldivs {
+  background-image: url("../img/Maldivs.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tour_Crete {
+  background-image: url("../img/seaside.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.luxury {
+  background-image: url("../img/hotel-numbers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+  padding: 212px 229px 140px 45px;
+}
+
+.picture-title {
+  color: #fff;
+  font-size: 40px;
+  max-width: 420px;
+  margin: 0;
+}
+
+.luxury_title {
+  max-width: 299px;
+  font-size: 60px;
+  /* margin: 212px 229px 148px 45px; */
+}
+
+.price {
+  margin-top: 0;
+  padding-top: 15px;
+  color: #fff;
+  opacity: 0.8;
+  font-size: 20px;
+}
+
+.luxury .price {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+/* section about us */
 
 .sec-text {
   margin-top: 70px;
   margin-bottom: 130px;
 }
 
+.sec-title {
+  padding-left: 40px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.section__context {
+  max-width: 888px;
+  margin-top: 20px;
+}
+
+.section__context .text {
+  line-height: 32px;
+  font-size: 16px;
+}
+
 /* Services*/
 
-.services {
+.services__list {
   flex-wrap: wrap;
 }
 
 .service-item {
   width: 573px;
   margin-right: 0;
+  border-radius: 15px;
+  background-color: #fff;
+  margin-bottom: 24px;
+  margin-right: 24px;
+}
+
+.services__list li:nth-child(2n) {
+  margin-right: 0;
+}
+
+.service-item a {
+  color: #cc9933;
+  font-size: 20px;
+}
+
+.service-item p {
+  line-height: 32px;
+  font-size: 16px;
+  width: 402px;
+}
+
+.service-item .image {
+  width: 100%;
+  height: 163px;
+}
+
+.exclusive__service {
+  background-image: url("../img/service1-bg.png");
+}
+
+.rent {
+  background-image: url("../img/service-2-bg.png");
+}
+
+.swimming__pools {
+  background-image: url("../img/service-3-bg.png");
+}
+
+.car__parks {
+  background-image: url("../img/service-4-bg.png");
+}
+
+.container-services h2 {
+  color: #333333;
+  font-size: 40px;
+  padding-left: 40px;
+  font-weight: 400;
+}
+
+.service__item__content {
+  padding: 26px 126px 35px 45px;
 }
 
 /* Advantage */
@@ -158,10 +324,75 @@ body {
 .advantage-item {
   width: 276px;
   padding-right: 22px;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 42px 42px 32px 45px;
+  margin: 0px 22px 22px 0px;
 }
 
-.advantage :not(:last-child){
+.advantage-item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.advantage :not(:last-child) {
   margin-right: 0;
+}
+
+.item-text {
+  line-height: 32px;
+  font-size: 16px;
+  width: 190px;
+  position: relative;
+  top: 60px;
+  padding-bottom: 32px;
+}
+
+.bathtub {
+  background-image: url("../img/bathtub.svg");
+  background-repeat: no-repeat;
+  background-position: 42px 45px;
+}
+
+.hanger {
+  background-image: url("../img/hanger.svg");
+  background-repeat: no-repeat;
+  background-position: 42px 45px;
+}
+
+.heating {
+  background-image: url("../img/heating.svg");
+  background-repeat: no-repeat;
+  background-position: 42px 45px;
+}
+
+.hotel_key {
+  background-image: url("../img/hotel-key.svg");
+  background-repeat: no-repeat;
+  background-position: 42px 45px;
+}
+
+.parking {
+  background-image: url("../img/parking.svg");
+  background-repeat: no-repeat;
+  background-position: 42px 45px;
+}
+
+.reception {
+  background-image: url("../img/reception.svg");
+  background-repeat: no-repeat;
+  background-position: 42px 45px;
+}
+
+.security-box {
+  background-image: url("../img/security-box.svg");
+  background-repeat: no-repeat;
+  background-position: 42px 45px;
+}
+
+.swimming {
+  background-image: url("../img/swimming-pool.svg");
+  background-repeat: no-repeat;
+  background-position: 42px 45px;
 }
 
 /* accommodation */
@@ -173,3 +404,16 @@ body {
 .accommodation-list {
   flex-wrap: wrap;
 }
+
+.accommodation-item {
+  margin-right: 24px;
+}
+
+.accommodation-list:nth-child(3n) {
+  margin-right: 0;
+} 
+
+/* .accommodation-item {
+  margin-right: 24px;
+  margin-left: 0;
+} */
