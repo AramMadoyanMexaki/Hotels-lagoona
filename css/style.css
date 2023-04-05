@@ -21,24 +21,32 @@ img {
 
 @font-face {
   font-family: "Muller";
-  src: local("Muller-Regular") url("../fonts/MullerRegular.woff") format("woff")
-    url("../fonts/MullerRegular.woff2") format("woff2");
+  src:local("Muller-Regular"),
+    url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Muller";
-  src: local("Muller-Light") url("../fonts/MullerLight.woff") format("woff")
-    url("../fonts/MullerLight.woff2") format("woff2");
+  src:local("Muller-light"),
+    url("../fonts/MullerLight.woff2") format("woff2"),
+    url("../fonts/MullerLight.woff") format("woff");
   font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Muller";
-  src: local("Muller-Medium") url("../fonts/MullerMedium.woff") format("woff")
-    url("../fonts/MullerMedium.woff2") format("woff2");
+  src:local("Muller-Medium"),
+    url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
   font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* body */
@@ -46,7 +54,7 @@ img {
 body {
   min-width: 1200px;
   font-family: "Muller", sans-serif;
-  background-color: #e5e5e5;
+  background-color: #f1f1f1;
 }
 
 /* glob */
@@ -125,7 +133,7 @@ body {
   width: 100%;
   background-color: #fff;
   border-radius: 15px;
-  padding: 27px 45px;
+  padding: 14px 45px;
   margin-top: 30px;
 }
 
@@ -142,23 +150,25 @@ body {
   border-radius: 15px;
 }
 
+.btn:last-child {
+  margin-right: 0;
+}
+
 .buttons {
   display: flex;
 }
 
-.back-call {
-  margin-right: 0;
-}
-
 /* section special-offers */
 
+.section-special-offers {
+  margin-top: 70px;
+}
+
 .picture {
-  margin-top: 24px;
   width: 573px;
-  height: 258px;
   border-radius: 15px;
   overflow: hidden;
-  padding: 40px 108px 138px 45px;
+  padding: 40px 108px 40px 45px;
 }
 
 .picture a {
@@ -173,7 +183,7 @@ body {
 }
 
 .special-offers {
-  margin-left: 40px;
+  margin: 0 0 20px 40px;
   font-weight: 400;
   font-size: 40px;
 }
@@ -182,6 +192,7 @@ body {
   background-image: url("../img/Maldivs.png");
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 24px;
 }
 
 .tour_Crete {
@@ -194,29 +205,32 @@ body {
   background-image: url("../img/hotel-numbers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 540px;
-  padding: 212px 229px 140px 45px;
+  padding: 212px 229px 40px 45px;
 }
 
 .picture-title {
   color: #fff;
   font-size: 40px;
   max-width: 420px;
-  margin: 0;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.picture .more {
+  margin-bottom: 40px;
 }
 
 .luxury_title {
   max-width: 299px;
   font-size: 60px;
-  /* margin: 212px 229px 148px 45px; */
 }
 
 .price {
-  margin-top: 0;
-  padding-top: 15px;
+  margin-top: 15px;
   color: #fff;
   opacity: 0.8;
   font-size: 20px;
+  margin-bottom: 47px;
 }
 
 .luxury .price {
@@ -247,6 +261,7 @@ body {
 .section__context .text {
   line-height: 32px;
   font-size: 16px;
+  margin: 0;
 }
 
 /* Services*/
@@ -276,7 +291,6 @@ body {
 .service-item p {
   line-height: 32px;
   font-size: 16px;
-  width: 402px;
 }
 
 .service-item .image {
@@ -326,25 +340,22 @@ body {
   padding-right: 22px;
   border-radius: 15px;
   background-color: #fff;
-  padding: 42px 42px 32px 45px;
+  padding: 116px 42px 32px 45px;
   margin: 0px 22px 22px 0px;
+}
+
+.advantage-item .item-text {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .advantage-item:nth-child(4n) {
   margin-right: 0px;
 }
 
-.advantage :not(:last-child) {
-  margin-right: 0;
-}
-
 .item-text {
   line-height: 32px;
   font-size: 16px;
-  width: 190px;
-  position: relative;
-  top: 60px;
-  padding-bottom: 32px;
 }
 
 .bathtub {
@@ -407,13 +418,65 @@ body {
 
 .accommodation-item {
   margin-right: 24px;
+  background-color: #fff;
+  margin-bottom: 24px;
+  border-radius: 15px;
 }
 
-.accommodation-list:nth-child(3n) {
+.accommodation-item:nth-child(3n) {
   margin-right: 0;
 } 
-
-/* .accommodation-item {
-  margin-right: 24px;
-  margin-left: 0;
+/* 
+ul li:nth-last-child(1),
+ul li:nth-last-child(2),
+ul li:nth-last-child(3) {
+  margin-bottom: 0;
 } */
+
+.accommodation__item__content {
+  padding: 32px 45px 45px 45px;
+}
+
+.see__all {
+  background-image: url("../img/all-variants-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  width: 374px;
+  padding: 373px 54px 27px 54px;
+}
+
+.see__all a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.text_stars p {
+  margin: 0;
+}
+
+.text_stars {
+  justify-content: space-between;
+}
+
+.accommodation__item__content .context {
+  font-size: 16px;
+  color: #000;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.accommodation__item__content .country, .from {
+  color: #999999;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.from__price {
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+}
