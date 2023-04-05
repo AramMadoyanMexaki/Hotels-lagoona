@@ -298,6 +298,10 @@ body {
   height: 163px;
 }
 
+.service-text {
+  margin-bottom: 0;
+}
+
 .exclusive__service {
   background-image: url("../img/service1-bg.png");
 }
