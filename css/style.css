@@ -114,6 +114,10 @@ body {
   order: 2;
 }
 
+.arrow-logo {
+  vertical-align: middle;
+}
+
 /* header */
 
 .header {
