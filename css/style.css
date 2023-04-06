@@ -49,6 +49,16 @@ img {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Muller";
+  src:local("Muller-Bold"),
+    url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* body */
 
 body {
@@ -119,6 +129,8 @@ body {
 .phone-number {
   margin-left: 40px;
   color: #666666;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .header__top {
@@ -214,6 +226,7 @@ body {
   max-width: 420px;
   margin-bottom: 15px;
   margin-top: 0;
+  font-weight: 700;
 }
 
 .picture .more {
@@ -226,7 +239,7 @@ body {
 }
 
 .price {
-  margin-top: 15px;
+  margin-top: 0;
   color: #fff;
   opacity: 0.8;
   font-size: 20px;
@@ -243,7 +256,7 @@ body {
 
 .sec-text {
   margin-top: 70px;
-  margin-bottom: 130px;
+  margin-bottom: 70px;
 }
 
 .sec-title {
@@ -346,10 +359,11 @@ body {
   background-color: #fff;
   padding: 116px 42px 32px 45px;
   margin: 0px 22px 22px 0px;
+  background-repeat: no-repeat;
+  background-position: 42px 45px;
 }
 
 .advantage-item .item-text {
-  margin-top: 10px;
   margin-bottom: 0;
 }
 
@@ -364,50 +378,34 @@ body {
 
 .bathtub {
   background-image: url("../img/bathtub.svg");
-  background-repeat: no-repeat;
-  background-position: 42px 45px;
 }
 
 .hanger {
   background-image: url("../img/hanger.svg");
-  background-repeat: no-repeat;
-  background-position: 42px 45px;
 }
 
 .heating {
   background-image: url("../img/heating.svg");
-  background-repeat: no-repeat;
-  background-position: 42px 45px;
 }
 
 .hotel_key {
   background-image: url("../img/hotel-key.svg");
-  background-repeat: no-repeat;
-  background-position: 42px 45px;
 }
 
 .parking {
   background-image: url("../img/parking.svg");
-  background-repeat: no-repeat;
-  background-position: 42px 45px;
 }
 
 .reception {
   background-image: url("../img/reception.svg");
-  background-repeat: no-repeat;
-  background-position: 42px 45px;
 }
 
 .security-box {
   background-image: url("../img/security-box.svg");
-  background-repeat: no-repeat;
-  background-position: 42px 45px;
 }
 
 .swimming {
   background-image: url("../img/swimming-pool.svg");
-  background-repeat: no-repeat;
-  background-position: 42px 45px;
 }
 
 /* accommodation */
@@ -425,6 +423,10 @@ body {
   background-color: #fff;
   margin-bottom: 24px;
   border-radius: 15px;
+}
+
+.hotel_picture {
+  display: block;
 }
 
 .accommodation-item:nth-child(3n) {
@@ -448,6 +450,9 @@ ul li:nth-last-child(3) {
   border-radius: 15px;
   width: 374px;
   padding: 373px 54px 27px 54px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .see__all a {
@@ -457,26 +462,35 @@ ul li:nth-last-child(3) {
   line-height: 40px;
 }
 
+.hotel_number {
+  padding: 13px 20px;
+  border: 1px solid #cc9933;
+  display: inline-block;
+}
+
 .text_stars p {
   margin: 0;
 }
 
 .text_stars {
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 
-.accommodation__item__content .context {
+.context {
   font-size: 16px;
   color: #000;
   line-height: 16px;
   font-weight: 400;
+  margin-top: 0;
 }
 
-.accommodation__item__content .country, .from {
+.country, .from {
   color: #999999;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  margin-top: 0;
 }
 
 .from__price {
