@@ -521,7 +521,7 @@ ul li:nth-last-child(3) {
   border-radius: 15px;
 }
 
-.bilet {
+.ticket {
   padding: 31px 28px;
   background-color: #fff;
   border-radius: 15px;
@@ -563,7 +563,7 @@ ul li:nth-last-child(3) {
   font-weight: 400;
 }
 
-.find_bilet {
+.find_ticket {
   display: inline-block;
   padding: 13px 30px;
   background-color: inherit;
@@ -672,6 +672,7 @@ ul li:nth-last-child(3) {
   border-radius: 15px;
   font-size: 16px;
   line-height: 16px;
+  display: inline-block;
 }
 
 .email_text {
@@ -734,4 +735,13 @@ footer {
 
 .footer_email {
   padding: 0;
+}
+
+.social_item {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.social_item:nth-child(3n) {
+  margin-bottom: 0;
 }
