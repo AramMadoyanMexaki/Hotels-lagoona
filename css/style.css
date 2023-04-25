@@ -764,6 +764,9 @@ body {
 .contact_item_context {
   width: 229px;
   margin-bottom: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .phone_address {
@@ -897,6 +900,7 @@ footer {
 
 .using {
   margin-top: 40px;
+  max-width: max-content;
   transition: color 0.2s linear;
 }
 
@@ -916,10 +920,15 @@ footer {
 .footer_tel_addresses {
   margin-top: 15px;
   margin-bottom: 15px;
+  max-width: max-content;
 }
 
 .footer_email {
-  padding: 0;
+  padding: 0px;
+}
+
+.footer_email-link {
+  max-width: max-content;
 }
 
 .social_item {
