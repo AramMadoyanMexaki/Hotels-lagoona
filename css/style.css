@@ -369,11 +369,29 @@ body {
   color: #333333;
 }
 
+.section__context {
+  max-width: 888px;
+  margin-top: 20px;
+}
+
+.section__context .text {
+  line-height: 32px;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Services*/
+
+.services__list {
+  flex-wrap: wrap;
+}
+
 .service__item__link {
   transition: color 0.2s linear;
 }
 
 .service__item__link:focus {
+  outline: none;
   color: var(--linkColor);
 }
 
@@ -401,21 +419,9 @@ body {
   margin-left: 11px;
 }
 
-.section__context {
-  max-width: 888px;
-  margin-top: 20px;
-}
-
-.section__context .text {
-  line-height: 32px;
-  font-size: 16px;
-  margin: 0;
-}
-
-/* Services*/
-
-.services__list {
-  flex-wrap: wrap;
+.service-item:focus-within {
+  outline: 1px solid var(--linkColor);
+  outline-offset: 8px;
 }
 
 .service-item {
